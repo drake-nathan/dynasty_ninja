@@ -1,0 +1,14 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+    <h4>{{ user.username }}'s Dynasty Portfolio</h4>
+    <br>
+    <p>{{ league_string }}</p>
+    <br>
+    <p>You have a total of {{ total_num_of_players }} different players across all of your dynasty rosters.</p>
+    <br>
+    <div>
+        {% autoescape off %}
+        {{ graph }}
+        {% endautoescape %}
+    </div>
+{% endblock content %} 
