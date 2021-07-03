@@ -1,6 +1,3 @@
-anaconda-client==1.7.2
-anaconda-navigator==2.0.3
-anaconda-project @ file:///tmp/build/80754af9/anaconda-project_1610472525955/work
 appdirs==1.4.4
 applaunchservices==0.2.1
 astropy @ file:///opt/concourse/worker/volumes/live/0a514e04-301a-48f9-530f-90365df6420e/volume/astropy_1617745469121/work
