@@ -21,12 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '18chehqavi4g+5t!%6pn+d#h5g@cu=t0uw0xoj_mn5w7&_at86'
+# SECRET_KEY = '18chehqavi4g+5t!%6pn+d#h5g@cu=t0uw0xoj_mn5w7&_at86'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dynasty-ninja.herokuapp.com']
 
 
 # Application definition
@@ -136,5 +137,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "nathan@dynasty.ninja"
-EMAIL_HOST_PASSWORD = "cyud uqji lmla qxsh"
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+
