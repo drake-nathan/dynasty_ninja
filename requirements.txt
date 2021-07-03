@@ -1,5 +1,5 @@
 appdirs==1.4.4
-asgiref==3.4.1
+asgiref==3.4.0
 brotlipy==0.7.0
 certifi==2021.5.30
 cffi==1.14.5
@@ -14,7 +14,7 @@ pandas==1.2.5
 Pillow==8.3.0
 pipenv==2020.11.15
 plotly==5.1.0
-psycopg2==2.9.1
+psycopg2==2.8.6
 pycparser==2.20
 pyOpenSSL==20.0.1
 PySocks==1.7.1
