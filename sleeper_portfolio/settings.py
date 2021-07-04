@@ -30,6 +30,7 @@ DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = [
     'dynasty-ninja.herokuapp.com',
+    'dynasty.ninja'
     '127.0.0.1'
 ]
 
