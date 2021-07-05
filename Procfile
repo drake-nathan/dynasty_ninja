@@ -1,1 +1,1 @@
-web: gunicorn sleeper_portfolio.wsgi
+web: gunicorn dynasty_ninja.wsgi
