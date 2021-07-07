@@ -47,5 +47,4 @@ def portfolio(request):
     return render(request, 'portfolio/portfolio.html', context)
 
 def about(request):
-    photo = 'dynasty_ninja/portfolio/assets/IMG_0962.jpeg'
-    return render(request, 'portfolio/about.html', {'photo': photo})
+    pass
