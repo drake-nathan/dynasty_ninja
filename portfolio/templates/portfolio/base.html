@@ -18,7 +18,9 @@
       <header class="site-header">
           <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
             <div class="container">
-              <img src="{% static '/portfolio/faviconit/favicon-32.png' %}">
+              <a href="{% url 'portfolio-home' %}">
+                <img src="{% static '/portfolio/faviconit/favicon-32.png' %}">
+              </a>
               <a class="navbar-brand mr-3 ml-3" href="/">Dynasty Ninja</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
