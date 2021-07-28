@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .make_graph import make_graph
+import json
+import requests
 
 
 def home(request):
@@ -17,6 +19,13 @@ def portfolio(request):
         'total_num_of_players': total_num_of_players
     }
     return render(request, 'portfolio/portfolio.html', context)
+
+# frontend lib: recharts
+def get_graph(request):
+    context_graph, pretty_string, total_num_of_players = make_graph(request.user.username)
+    data = json.dumps(context_graph)  # this may not be necessary, I think there is a JsonResponse type that accepts a dict
+    return requests.Response(data=data)
+
 
 def showcase(request):
 
