@@ -34,6 +34,8 @@ Django = "==3.2.4"
 Pillow = "==8.3.0"
 pyOpenSSL = "==20.0.1"
 PySocks = "==1.7.1"
+postgres = "*"
+psycopg2 = "*"
 
 [dev-packages]
 
